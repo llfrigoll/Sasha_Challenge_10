@@ -13,28 +13,28 @@ const sarahPostal = '0310'
 
 // Only change below this line
 
-const leo {
-	name = leoName + leoSurname
-	balance = leoBalance
-	access id = 47afb389-8014-4d0b-aff3-e40203d2107f
-	age = 24
-	address {
-		number = leoNumber
-		street = leoStreet
-		postal-code = leoPostal
+const leo = {
+	name: leoName,
+	balance: leoBalance,
+	access_id: '47afb389-8014-4d0b-aff3-e40203d2107f',
+	age: 24,
+	address: {
+		number: leoNumber,
+		street: leoStreet,
+		postal_code: leoPostal
 	}
 }
 
-const sarah {
-	name = saraName + saraSurname
-	age = 62
-	access id = 6b279ae5-5657-4240-80e9-23f6b635f7a8
-	balance = sarahBalance
-	address {
-		number = sarahNumber
-		street = sarahStreet
-		postal-code = sarahPostal
+const sarah = {
+	name: sarahName.trim() + ' ' + sarahSurname,
+	age: 62,
+	access_id: '6b279ae5-5657-4240-80e9-23f6b635f7a8',
+	balance: sarahBalance,
+	address: {
+		number: sarahNumber,
+		street: sarahStreet,
+		postal_code: sarahPostal
 	}
-
-console.log(leo, leo[address][postal-code])
-console.log(sarah, sarah[address][postal-code])
+}
+console.log(leo, leo.address.postal_code)
+console.log(sarah, sarah.address.postal_code)
